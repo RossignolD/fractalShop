@@ -1,0 +1,23 @@
+.search-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.product{
+    display: flex;
+    flex-direction: rev;
+}
+
+#s4, #noetherian, #klein-bottle{
+    height: 10rem;
+    padding-bottom: 3rem;
+    width: 60%;
+}
+
+p{
+    margin-right: 3rem;
+}
+img{
+    border: 3px black solid;
+    margin-right: 3rem;
+}

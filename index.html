@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>The Fractal Shop</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>The Fractal Shop</h1>
-    <h2>The only place online to buy rare mathematical objects at bargain prices</h2>
+    <h2>The only place online to buy mathematical objects at bargain prices</h2>
     <form id="search-form">
-        <div class="search-row"><input type="text" id="search-input" placeholder="What are you looking for?"></div>
+      <div class="search-row">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="What are you looking for?"
+        />
         <button type="submit">Search the Fractal Shop</button>
+      </div>
     </form>
-    <div>
-        <div>
-
+    <div id="all-items">
+      <div>
+        <h3>Beautiful and Versatile: The Fourth Symmetric Group</h3>
+        <div id="s4" class="algebra product">
+          <img src="s4.svg" alt="A wireframe drawing of a tetrahedron" />
+          <p>
+            A beautiful example of a non-abelian group, S4 never fails to
+            please. Whether you prefer its representation as the tetrahedron or
+            the permutations of four elements, the Fractal Shop has you covered!
+            We have these representations, and more, in stock and ready for
+            shipping NOW. Our low price gets you 30 subgroups for less than $1
+            per subgroup!
+          </p>
+          <div>
+            <span class="category">Category: Algebra</span>
+            <div class="price">29.99</div>
+          </div>
         </div>
+      </div>
+
+      <div>
+        <h3>An Algebraic Classic: Noetherian Ring</h3>
+        <div id="noetherian" class="algebra product">
+          <img
+            src="noetherian.svg"
+            alt="An example of a Noetherian ring, the integers adjoined with (1+sqrt(-19))/2"
+          />
+          <p>
+            This is one ring to rule them all! Featuring an ascending chain
+            condition on its ideals, you don't want to miss out on the
+            Noetherian ring. Why settle for any old algebraic structure with two
+            binary operations when you can have a Noetherian ring NOW for the
+            low, LOW price of only $65.99. They're going fast, get 'em now!
+          </p>
+          <div>
+            <span class="category">Category: Algebra</span>
+            <div class="price">65.99</div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h3>Klein Bottle: Now Available Embedded in R3</h3>
+        <div id="klein-bottle" class="topology product">
+          <img src="klein_bottle.png" alt="A wireframe drawing of a tetrahedron" />
+          <p>
+            A pleasure to behold in both the mind's eye and the body's eye, the Klein bottle offers timeless
+            mathematical beauty that can also serve a household function. After overcoming vapor lock,
+            rotate the Klein bottle appropriately to fill with water, apple juice, or any other liquid you can imagine. Just don't let the liquid leak out of the outside/inside and into the outside/inside.
+          </p>
+          <div>
+              <span class="category">Category: Topology</span>
+              <div class="price">34.99</div>
+          </div>
+        </div>
+      </div>
+
     </div>
-</body>
+  </body>
 </html>
