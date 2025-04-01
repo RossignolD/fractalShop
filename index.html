@@ -9,73 +9,196 @@
   <body>
     <h1>The Fractal Shop</h1>
     <h2>The only place online to buy mathematical objects at bargain prices</h2>
-    <form id="search-form">
+    <!-- <form id="search-form">
       <div class="search-row">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="What are you looking for?"
-        />
+        <input type="text" id="search-input" placeholder="Find products..." />
         <button type="submit">Search the Fractal Shop</button>
       </div>
+    </form> -->
+
+    <form id="sorting-form">
+      <div class="sorting-row">
+        <input type="radio" name="sort" id="sort-AZ" value="AZ" />
+        <label for="sort-AZ"> Sort Products A-Z</label>
+        <input type="radio" name="sort" id="sort-ZA" value="ZA" />
+        <label for="sort-ZA">Sort Products Z-A</label>
+        <input type="radio" name="sort" id="sort-high-to-low" value="Hi-Lo" />
+        <label for="sort-high-to-low"
+          >Sort Products from Highest to Lowest Price</label
+        >
+        <input type="radio" name="sort" id="sort-low-to-high" value="Lo-Hi" />
+        <label for="sort-low-to-high"
+          >Sort Products from Lowest to Highest Price</label
+        >
+        <button type="submit">Submit</button>
+      </div>
     </form>
+
     <div id="all-items">
-      <div>
-        <h3>Beautiful and Versatile: The Fourth Symmetric Group</h3>
-        <div id="s4" class="algebra product">
-          <img src="s4.svg" alt="A wireframe drawing of a tetrahedron" />
+      <div data-title="Mandelbrot Set" data-price="29.99">
+        <h3>Mandelbrot Set</h3>
+        <div id="mandelbrot" class="ifs product">
+          <img
+            src="mandelbrot.jpg"
+            alt="A computer generated picture of the Mandelbrot Set"
+          />
           <p>
-            A beautiful example of a non-abelian group, S4 never fails to
-            please. Whether you prefer its representation as the tetrahedron or
-            the permutations of four elements, the Fractal Shop has you covered!
-            We have these representations, and more, in stock and ready for
-            shipping NOW. Our low price gets you 30 subgroups for less than $1
-            per subgroup!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ea
+            fuga veniam, asperiores reprehenderit dolor eum aperiam assumenda
+            facilis quos rem ducimus eaque. Quos, aliquid iste. Quibusdam ea
+            optio magnam.
           </p>
           <div>
-            <span class="category">Category: Algebra</span>
+            <span class="category">Category: Iterated Function System</span>
             <div class="price">29.99</div>
           </div>
         </div>
       </div>
 
-      <div>
-        <h3>An Algebraic Classic: Noetherian Ring</h3>
-        <div id="noetherian" class="algebra product">
+      <div data-title="Julia Set" data-price="65.99">
+        <h3>
+          Julia Set generated from c = -0.512511498387847167 +
+          0.521295573094847167i
+        </h3>
+        <div id="julia" class="ifs product">
           <img
-            src="noetherian.svg"
-            alt="An example of a Noetherian ring, the integers adjoined with (1+sqrt(-19))/2"
+            src="julia.png"
+            alt="An example of a computer generated Julia Set"
           />
           <p>
-            This is one ring to rule them all! Featuring an ascending chain
-            condition on its ideals, you don't want to miss out on the
-            Noetherian ring. Why settle for any old algebraic structure with two
-            binary operations when you can have a Noetherian ring NOW for the
-            low, LOW price of only $65.99. They're going fast, get 'em now!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+            ducimus officiis mollitia, sed corporis dignissimos dolorum vel in
+            at laudantium voluptates quod, odio rerum facilis debitis
+            exercitationem autem tempore nesciunt?
           </p>
           <div>
-            <span class="category">Category: Algebra</span>
+            <span class="category">Category: Iterated Function System</span>
             <div class="price">65.99</div>
           </div>
         </div>
       </div>
-      
-      <div>
-        <h3>Klein Bottle: Now Available Embedded in R3</h3>
-        <div id="klein-bottle" class="topology product">
-          <img src="klein_bottle.png" alt="A wireframe drawing of a tetrahedron" />
+
+      <div data-title="Burning Ship" data-price="34.99">
+        <h3>The Burning Ship</h3>
+        <div id="burning" class="ifs product">
+          <img
+            src="burning.png"
+            alt="A computer generated picture of the Burning Ship fractal"
+          />
           <p>
-            A pleasure to behold in both the mind's eye and the body's eye, the Klein bottle offers timeless
-            mathematical beauty that can also serve a household function. After overcoming vapor lock,
-            rotate the Klein bottle appropriately to fill with water, apple juice, or any other liquid you can imagine. Just don't let the liquid leak out of the outside/inside and into the outside/inside.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio
+            id voluptatem. Non, quaerat similique nostrum cum, quia laboriosam
+            aliquam omnis repellendus deleniti odio eveniet sed tempora
+            molestias accusamus optio?
           </p>
           <div>
-              <span class="category">Category: Topology</span>
-              <div class="price">34.99</div>
+            <span class="category">Category: Topology</span>
+            <div class="price">34.99</div>
           </div>
         </div>
       </div>
 
+      <div data-title="Chaos Game on a Pentagon" data-price="51.99">
+        <h3>Chaos Game on a Pentagon</h3>
+        <div id="pentagon" class="chaos product">
+          <img
+            src="chaosPentagon.png"
+            alt="A computer generated picture of a chaos game played on a pentagon"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio
+            id voluptatem. Non, quaerat similique nostrum cum, quia laboriosam
+            aliquam omnis repellendus deleniti odio eveniet sed tempora
+            molestias accusamus optio?
+          </p>
+          <div>
+            <span class="category">Category: Chaos Game</span>
+            <div class="price">51.99</div>
+          </div>
+        </div>
+      </div>
+
+      <div data-title="Sierpinski Triangle" data-price="14.99">
+        <h3>The Sierpinski Triangle</h3>
+        <div id="sierpinski" class="chaos product">
+          <img
+            src="sierpinski.svg"
+            alt="A computer generated picture of the Sierpinski triangle"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio
+            id voluptatem. Non, quaerat similique nostrum cum, quia laboriosam
+            aliquam omnis repellendus deleniti odio eveniet sed tempora
+            molestias accusamus optio?
+          </p>
+          <div>
+            <span class="category">Category: Chaos Game</span>
+            <div class="price">14.99</div>
+          </div>
+        </div>
+      </div>
+
+      <div data-title="Menger Sponge" data-price="89.99">
+        <h3>The Menger Sponge</h3>
+        <div id="sponge" class="space-filling product">
+          <img
+            src="menger.png"
+            alt="A computer generated picture of the Menger Sponge"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio
+            id voluptatem. Non, quaerat similique nostrum cum, quia laboriosam
+            aliquam omnis repellendus deleniti odio eveniet sed tempora
+            molestias accusamus optio?
+          </p>
+          <div>
+            <span class="category">Category: Space-filling</span>
+            <div class="price">89.99</div>
+          </div>
+        </div>
+      </div>
+
+      <div data-title="Hilbert Curve" data-price="43.99">
+        <h3>The Hilbert Curve</h3>
+        <div id="hilbert" class="space-filling product">
+          <img
+            src="hilbertCurve.png"
+            alt="A computer generated picture of the Peano space-filling curve"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio
+            id voluptatem. Non, quaerat similique nostrum cum, quia laboriosam
+            aliquam omnis repellendus deleniti odio eveniet sed tempora
+            molestias accusamus optio?
+          </p>
+          <div>
+            <span class="category">Category: Space-filling</span>
+            <div class="price">43.99</div>
+          </div>
+        </div>
+      </div>
+
+      <div data-title="Peano Space-filler" data-price="11.99">
+        <h3>The Peano Space-filler</h3>
+        <div id="peano" class="space-filling product">
+          <img
+            src="peanoCurve.png"
+            alt="A computer generated picture of the Peano Space-filler curve"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio
+            id voluptatem. Non, quaerat similique nostrum cum, quia laboriosam
+            aliquam omnis repellendus deleniti odio eveniet sed tempora
+            molestias accusamus optio?
+          </p>
+          <div>
+            <span class="category">Category: Space-filling</span>
+            <div class="price">11.99</div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="sorting.js"></script>
   </body>
 </html>
