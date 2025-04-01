@@ -1,3 +1,4 @@
+const form = document.getElementById("sorting-form");
 const products = document.getElementsByClassName("product");
 
 function getProductTitles() {
@@ -18,8 +19,6 @@ function getProductPrices(){
     return productPrices
 }
 
-const form = document.querySelector("form");
-const log = document.querySelector("#log");
 
 form.addEventListener("change", (event) => {
   if (event.target.type === "radio") {
