@@ -5,7 +5,7 @@
 
 .product{
     display: flex;
-    flex-direction: rev;
+    flex-direction: row;
 }
 
 #s4, #noetherian, #klein-bottle{
